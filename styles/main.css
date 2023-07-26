@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    background-color: rgb(150, 111, 51);
+}
+
+h1 {
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#turn-box {
+    background-color: #335B96;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 150px;
+    height: 60px;
+    margin-top: 0px;
+    border: 10px groove rgb(78, 65, 44);
+    box-shadow: 8px 10px 40px -8px rgba(0,0,0,0.75);
+}
+
+p {
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 0px;
+    color: black;
+    position: absolute;
+    top: 0px;
+}
+
+span {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    font-size: 40px;
+    color: black;
+}
+
+#board {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 800px;
+    flex-wrap: wrap;
+    border: 10px groove rgb(78, 65, 44);
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    border: 1px rgb(0, 0, 0) solid;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.black, .white {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    #turn-box {
+        top: 10px;
+        left: 10px;
+        width: 112px;
+        height: 45px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+    
+    span {
+        font-size: 30px;
+    }
+
+    #board {
+        margin-top: 35px;
+        width: 600px;
+    }
+    
+    button {
+        font-size: 20px;
+        width: 75px;
+        height: 75px;
+    }
+    
+    
+    img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #turn-box {
+        width: 75px;
+        height: 30px;
+    }
+    
+    p {
+        font-size: 10px;
+    }
+    
+    span {
+        font-size: 20px;
+    }
+
+    #board {
+        margin-top: 55px;
+        width: 400px;
+    }
+    
+    button {
+        font-size: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    img {
+        width: 40px;
+        height: 40px;
+    }
+}
