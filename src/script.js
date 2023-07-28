@@ -260,9 +260,5 @@ function addPiece(square, colorClass, queen = false) { // create piece image
 
 function clearSquare(id) { // reset square to default
     if (squares[id].children[0]) squares[id].children[0].remove();
-    squares[id].classList.remove("white");
-    squares[id].classList.remove("black");
-    squares[id].classList.remove("queen");
-    squares[id].classList.remove("piece");
-    squares[id].classList.remove("chain");
+    squares[id].classList.remove("white", "black", "queen", "piece", "chain");
 }
